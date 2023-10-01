@@ -36,6 +36,7 @@ class TextImage extends ImagickDraw {
     $scale = isset($args['scale']) ? $args['scale'] : $this->scaleSize;
     $this->scale($scale[0], $scale[1]);
 
+    $this->setFont('/var/www/html/helvetica-black.ttf');
     $this->setFontWeight($this->fontWeight);
     $this->setStrokeWidth($this->strokeWidth);
     $this->setStrokeColor($this->strokeColor);
